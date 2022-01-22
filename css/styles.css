@@ -1,0 +1,223 @@
+/* CSS Custom Properties */
+:root {
+  --main-text-color: #757575;
+  --main-title-color: #212121;
+  --nav-text-color: #212121;
+  --active-color: #2196f3;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+}
+
+/* RESET STYLES*/
+.logo-link,
+.nav-link,
+.email-link,
+.phone-link,
+.geo-link {
+  text-decoration: none;
+}
+.nav-list,
+.team-list,
+.works-list,
+.advenyages-list,
+.footer-address-list,
+.header-address-list,
+.filter-list,
+.projects-list {
+  list-style-type: none;
+}
+.filter-btn,
+.hero-btn {
+  font-family: inherit;
+}
+
+/* PATTERN */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* HEADER */
+/* HEADER-LOGO */
+.first-part-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+header .second-part-logo {
+  color: #000000;
+}
+
+/* HEADER-NAVIGATION */
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--nav-text-color);
+}
+.nav-link.current {
+  color: var(--active-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-color);
+}
+
+/* HEADER-HEADER ADDRESS */
+.header-address-email > .email-link,
+.header-address-phone > .phone-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.email-link:hover,
+.email-link:focus,
+.phone-link:hover,
+.phone-link:focus {
+  color: var(--active-color);
+}
+
+/* MAIN */
+/* MAIN-HERO */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero {
+  background-color: #2f303a;
+}
+.hero-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* MAIN-ADVENTAGES */
+.adventages-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.adventages-item-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* MAIN-WORSK */
+.works-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+/* MAIN-TEAM */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.team-item-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #2f303a;
+}
+
+/* FOOTER-LOGO */
+footer .second-part-logo {
+  color: #ffffff;
+}
+
+/* FOOTER-ADDRESS */
+footer .geo-link {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+footer .email-link,
+footer .phone-link {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.geo-link:hover,
+.geo-link:focus {
+  color: var(--active-color);
+}
+
+/* PORTFOLIO */
+/* MAIN */
+/* OUR PORTFOLIO */
+.filter-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--active-color);
+}
+.projects-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+.projects-item-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
